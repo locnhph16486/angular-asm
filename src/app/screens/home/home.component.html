@@ -1,0 +1,4 @@
+<p>home works!</p>
+<p *ngFor="let item of listSubjects">
+    <a [routerLink]="'/quiz/' + item.id">{{item.name}}</a>
+</p> 

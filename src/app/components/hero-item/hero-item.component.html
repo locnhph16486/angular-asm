@@ -1,0 +1,12 @@
+<tr>
+    <td>{{heroData.id}}</td>
+    <td>{{heroData.name}}</td>
+    <td>
+        <img [src]="heroData.avatar" width="200">
+    </td>
+    <td>{{heroData.gender | gender}}</td>
+    <td>
+        <button class="btn btn-sm btn-info">Sửa</button>
+        <button (click)="remove()" class="btn btn-sm btn-danger">Xóa</button>
+    </td>
+</tr>

@@ -1,0 +1,4 @@
+<p>subject-list works!</p>
+<ul *ngFor="let item of subject">
+    <li><a [routerLink]="'/quiz/'+item.Code">{{item.Name}}</a></li>
+</ul>
