@@ -1,7 +1,9 @@
-<p>quiz works!</p>
 <div *ngFor="let item of quiz ; index as i">
     <div>
-        <h5>Câu {{i}} : </h5> {{item.Text}}
+        <h5>Câu {{i}} : </h5> {{item.Text}} <br>
+        <div *ngFor="let items of item.Answers">
+
+        <button>{{items.Text}}</button>
+        </div>
     </div>
-    <input type="checkbox" name="" id="">
 </div>
